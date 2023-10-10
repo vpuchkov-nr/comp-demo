@@ -42,7 +42,6 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
     "vite-plugin-dts": "^3.6.0",
-    "vite-plugin-external": "^4.0.1",
     "vitest": "^0.34.6"
   }
 }
