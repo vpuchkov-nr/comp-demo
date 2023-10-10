@@ -1,6 +1,6 @@
 {
   "name": "@vpuchkov-nr/comp-demo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -19,7 +19,8 @@
     "test": "vitest"
   },
   "files": [
-    "dist"
+    "dist",
+    "dist/style.css"
   ],
   "dependencies": {
     "primereact": "^10.0.2",
