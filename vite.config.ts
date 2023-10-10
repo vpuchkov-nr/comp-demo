@@ -2,6 +2,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react-swc'
+import postcss from 'rollup-plugin-postcss';
 import typescript from "@rollup/plugin-typescript";
 import { typescriptPaths } from "rollup-plugin-typescript-paths";
 
@@ -26,16 +27,20 @@ export default defineConfig({
           'react-dom': 'ReactDOM',
         },
       },
-      // plugins: [
-      //   typescriptPaths({
-      //     preserveExtensions: true,
-      //   }),
-      //   typescript({
-      //     sourceMap: false,
-      //     declaration: true,
-      //     outDir: "dist",
-      //   }),
-      // ],
+      plugins: [
+        // postcss({
+        //   extract: false,
+        //   use: ['sass'],
+        // })
+        // typescriptPaths({
+        //   preserveExtensions: true,
+        // }),
+        // typescript({
+        //   sourceMap: false,
+        //   declaration: true,
+        //   outDir: "dist",
+        // }),
+      ],
     },
   },
   plugins: [

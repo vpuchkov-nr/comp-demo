@@ -1,3 +1,3 @@
-import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/themes/lara-light-indigo/theme.css?inline";
 export { default as sum } from './sum';
 export { default as Button } from './Button';

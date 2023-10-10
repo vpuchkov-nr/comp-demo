@@ -1,6 +1,6 @@
 {
   "name": "@vpuchkov-nr/comp-demo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -37,7 +37,10 @@
     "eslint": "^8.51.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript-paths": "^1.4.0",
+    "sass": "^1.69.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
