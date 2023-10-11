@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.17](https://github.com/vpuchkov-nr/comp-demo/compare/v0.0.15...v0.0.17) (2023-10-11)
+
+
+### Miscellaneous Chores
+
+* release 0.0.17 ([075872d](https://github.com/vpuchkov-nr/comp-demo/commit/075872d80c8a4de33b1344c811b88312d7c460e0))
+
 ### [0.0.15](https://github.com/vpuchkov-nr/comp-demo/compare/v0.0.14...v0.0.15) (2023-10-11)
 
 ### 0.0.14 (2023-10-11)
