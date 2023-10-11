@@ -26,8 +26,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    react(),
-    dts(),
-  ],
+  plugins: [react(), dts()],
 });
