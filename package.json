@@ -1,6 +1,6 @@
 {
   "name": "@vpuchkov-nr/comp-demo",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -76,7 +76,6 @@
     "registry": "https://npm.pkg.github.com"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "@vpuchkov-nr/comp-demo@0.0.10",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
