@@ -25,7 +25,7 @@ function Badge(props: BadgeProps) {
   );
 
   return (
-    <div className="badge-container" onClick={handleClick}>
+    <div className="badge-container test" onClick={handleClick}>
       {icon ? (
         <i className={iconClassName} style={iconStyle}>
           <Component />
