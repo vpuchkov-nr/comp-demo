@@ -1,6 +1,6 @@
 {
   "name": "@vpuchkov-nr/comp-demo",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
