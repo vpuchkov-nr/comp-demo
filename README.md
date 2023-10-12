@@ -47,6 +47,12 @@ For convinience we use additional tools:
 <!-- - [Commitlint](https://commitlint.js.org/) for commit message linting -->
 
 For commit messages we follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+Follow this commands to make it easier:
+
+```bash
+git add .
+npm run commit
+```
 
 ## Github Workflows
 
