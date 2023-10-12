@@ -1,6 +1,6 @@
+import React, { ReactNode } from 'react';
 import { PrimeReactProvider } from 'primereact/api';
 import Tailwind from 'primereact/passthrough/tailwind';
-import { ReactNode } from 'react';
 
 type MyComponentProps = {
   children: ReactNode;
