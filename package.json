@@ -14,7 +14,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "init-msw": "msw init public/",
-    "prepare": "husky install",
+    "prepare": "husky install && commitizen init cz-conventional-changelog --save-dev --save-exact",
     "commit": "cz"
   },
   "files": [
