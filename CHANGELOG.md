@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.18](https://github.com/vpuchkov-nr/comp-demo/compare/v0.0.17...v0.0.18) (2023-10-12)
+
+
+### Features
+
+* **tailwind:** add css ([ca274c2](https://github.com/vpuchkov-nr/comp-demo/commit/ca274c205bb5246fcbe16f461e5622c5670243a8))
+* **tailwind:** try to use theme provider ([247efa2](https://github.com/vpuchkov-nr/comp-demo/commit/247efa2cb56c2e6ef235346b02146ed2bf0375c9))
+
+
+### Miscellaneous Chores
+
+* release 0.0.18 ([eb506b9](https://github.com/vpuchkov-nr/comp-demo/commit/eb506b950ba1de04a891e07011a888d4de7297d6))
+
 ## [0.0.17](https://github.com/vpuchkov-nr/comp-demo/compare/v0.0.15...v0.0.17) (2023-10-11)
 
 ### Miscellaneous Chores
