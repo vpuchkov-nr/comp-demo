@@ -1,8 +1,8 @@
 @layer tailwind-base, primereact, tailwind-utilities;
 
-@layer tailwind-base {
+/* @layer tailwind-base {
   @tailwind base;
-}
+} */
 
 @layer tailwind-utilities {
   @tailwind components;

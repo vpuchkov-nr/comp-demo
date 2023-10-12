@@ -1,15 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  purge: [
+  content: [
     './public/index.html',
     './src/**/*.{js,ts,jsx,tsx}',
     './node_modules/primereact/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
+        gray: {
+          100: '#e6f7ff',
+          900: '#fbf0ff',
+        },
+
         coreBlue: {
           100: '#e6f7ff',
           200: '#a8dfff',
@@ -191,9 +195,6 @@ module.exports = {
       borderFocusWarning: '#895400',
       borderErrorHover: '#b5161b',
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 };

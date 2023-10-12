@@ -1,2 +1,5 @@
-import 'primereact/resources/themes/lara-light-indigo/theme.css';
+// import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import './tailwind.css';
+// import tailwindConfig from '../tailwind.config.js';
+// tailwind.config = tailwindConfig;
 export { default as Button } from './Button/Button.tsx';
