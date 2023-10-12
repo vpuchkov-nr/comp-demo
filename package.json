@@ -75,7 +75,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "readme": "ERROR: No README data found!",
+  "readme": "README.md",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
