@@ -1,5 +1,5 @@
 # Workflow name
-name: 'Chromatic'
+name: 'Deploy to Chromatic'
 
 # Event for the workflow
 on: push
