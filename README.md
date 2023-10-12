@@ -1,12 +1,14 @@
 # Central Design System React Component Library
 
 This repository contains the reusable React components for the Central Design System. Components are built using [React v18](https://react.dev/), [PrimeReact v10](https://primereact.org/), [Tailwind v3](https://tailwindcss.com/), [TypeScript v5](https://www.typescriptlang.org/).
-[Vite v4](https://vitejs.dev/) is being used as bundler and [Vitest v0.34][https://vitest.dev/] as a test runner.
+
+[Vite v4](https://vitejs.dev/) is being used as bundler and [Vitest v0.34](https://vitest.dev/) as a test runner.
 For documentation we use [Storybook v7](https://storybook.js.org/) and to demo/test purposes [Chromatic](https://www.chromatic.com/) being used for each PR and main branch updates.
 
 ## How to use this library in separate repo
 
 `TODO: update this section with correct info`
+
 You need to update (create if not exists) `.npmrc` file in your project root directory with following content:
 
 ```bash
@@ -17,6 +19,7 @@ You need to update (create if not exists) `.npmrc` file in your project root dir
 where `AUTH_TOKEN` is a token from this repo (you can find it in `Settings -> Developer settings -> Personal access tokens`). Most likely you will need to pass this token as environment variable to your CI/CD pipeline and via `.env` file for local development.
 
 `TODO: update this section with correct info`
+
 Then you can install this library as any other npm package:
 
 ```bash
