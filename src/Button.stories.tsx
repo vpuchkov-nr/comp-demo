@@ -14,5 +14,6 @@ export const Basic: Story = {
     tooltip: 'test',
     label: 'test',
     icon: 'pi pi-check',
+    className: 'bg-mediaPurple-100 text-3xl',
   },
 };
