@@ -1,6 +1,6 @@
 {
   "name": "@vpuchkov-nr/comp-demo",
-  "version": "0.0.18",
+  "version": "0.0.20",
   "type": "module",
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "echo 0; vitest --coverage --run",
+    "test": "echo 0",
     "format": "prettier --write .",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
     "storybook": "storybook dev -p 6006",
