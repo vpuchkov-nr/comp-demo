@@ -6,6 +6,7 @@
 *.yaml text eol=lf
 *.yml text eol=lf
 *.md text eol=lf
+*.mdx text eol=lf
 *.json text eol=lf
 .husky/* text eol=lf
 .gitignore text eol=lf

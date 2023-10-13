@@ -1,0 +1,33 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import TailwindConfig from '../../tailwind.config.js';
+
+<Meta title="Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="theme.color.blue"
+    subtitle="Primary"
+    colors={TailwindConfig.theme.colors.blue}
+  />
+
+  <ColorItem
+    title="theme.color.grayscale"
+    subtitle="Grayscale"
+    colors={TailwindConfig.theme.extend.colors.grayscale}
+  />
+  <ColorItem
+    title="theme.color.red"
+    subtitle="Error"
+    colors={TailwindConfig.theme.colors.red}
+  />
+  <ColorItem
+    title="theme.color.green"
+    subtitle="Success"
+    colors={TailwindConfig.theme.colors.green}
+  />
+  <ColorItem
+    title="theme.color.yellow"
+    subtitle="Warning"
+    colors={TailwindConfig.theme.colors.yellow}
+  />
+</ColorPalette>
