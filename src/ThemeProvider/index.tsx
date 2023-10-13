@@ -13,8 +13,12 @@ const ThemeProvider = ({ children }: MyComponentProps) => {
     Tailwind,
     {
       button: {
-        root: () => ({
-          className: 'bg-zzz-500',
+        root: ({ props, context }) => ({
+          className: {
+            'bg-yellow-500': props.severity == 'warning',
+            'bg-red-500': props.severity == 'danger',
+            'bg-green-500': props.severity == 'success',
+          },
         }),
       },
     },
