@@ -2,6 +2,7 @@ import React from 'react';
 import { Badge as PrimeBadge } from 'primereact/badge';
 import { BadgeProps } from './Badge.ts';
 import './Badge.scss';
+import ThemeProvider from '../ThemeProvider';
 
 function Badge(props: BadgeProps) {
   const {
@@ -25,15 +26,17 @@ function Badge(props: BadgeProps) {
   );
 
   return (
-    <div className="badge-container test" onClick={handleClick}>
-      {icon ? (
-        <i className={iconClassName} style={iconStyle}>
+    <ThemeProvider>
+      <div className="badge-container test" onClick={handleClick}>
+        {icon ? (
+          <i className={iconClassName} style={iconStyle}>
+            <Component />
+          </i>
+        ) : (
           <Component />
-        </i>
-      ) : (
-        <Component />
-      )}
-    </div>
+        )}
+      </div>
+    </ThemeProvider>
   );
 }
 

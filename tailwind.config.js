@@ -6,6 +6,12 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
     './node_modules/primereact/**/*.{js,ts,jsx,tsx}',
   ],
+  safelist: [
+    {
+      pattern: /^(bg-|border-|text-)/,
+      variants: ['hover', 'active'],
+    },
+  ],
   theme: {
     colors: {
       blue: {
