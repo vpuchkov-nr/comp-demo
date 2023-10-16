@@ -3,7 +3,7 @@ import { Button as PrimeButton } from 'primereact/button';
 
 // import { usePassThrough } from 'primereact/passthrough';
 // import Tailwind from 'primereact/passthrough/tailwind';
-import ThemeProvider from '../ThemeProvider';
+// import ThemeProvider from '../ThemeProvider';
 
 export default function Button(props) {
   // const CustomTailwind = usePassThrough(
@@ -21,8 +21,8 @@ export default function Button(props) {
   //   }
   // );
   return (
-    <ThemeProvider>
-      <PrimeButton {...props} />
-    </ThemeProvider>
+    // <ThemeProvider>
+    <PrimeButton {...props} />
+    // </ThemeProvider>
   );
 }
