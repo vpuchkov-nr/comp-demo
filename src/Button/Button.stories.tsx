@@ -1,9 +1,15 @@
 import { Meta, StoryObj } from '@storybook/react';
-
 import Button from './Button.tsx';
+import { ThemeProvider } from '../';
+
+const Component = (args) => (
+  <ThemeProvider>
+    <Button {...args} />
+  </ThemeProvider>
+);
 
 const meta: Meta<typeof Button> = {
-  component: Button,
+  component: Component,
 };
 export default meta;
 
