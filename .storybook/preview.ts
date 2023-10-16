@@ -6,11 +6,8 @@ import 'primeicons/primeicons.css';
 
 import '../src/tailwind.css';
 
-import { decorators } from '../src/ThemeProvider';
-
 const preview = {
   parameters: {
-    decorators: decorators,
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {

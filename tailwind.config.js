@@ -8,11 +8,30 @@ export default {
   ],
   safelist: [
     {
-      pattern: /^(bg-|border-|text-)/,
+      pattern: /./,
       variants: ['hover', 'active'],
     },
   ],
   theme: {
+    spacing: {
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
+      8: '32px',
+      10: '40px',
+      12: '48px',
+      'border-width-1': '1px',
+      'border-width-2': '2px',
+    },
+    borderRadius: {
+      1: '3px',
+      2: '6px',
+      3: '12px',
+      full: '100px',
+    },
     colors: {
       blue: {
         100: '#e6f7ff',
@@ -64,6 +83,10 @@ export default {
       },
     },
     extend: {
+      boxShadow: {
+        small: '0 4px 8px 0 rgba(0,0,0,0.08)',
+        medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
+      },
       colors: {
         grayscale: {
           100: '#ffffff',
