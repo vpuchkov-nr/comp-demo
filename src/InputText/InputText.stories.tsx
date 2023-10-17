@@ -67,6 +67,7 @@ export const DefaultNoValue: Story = {
 
 export const DefaultWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Default - populated',
   args: {
     ...ARGS,
   },
@@ -74,14 +75,26 @@ export const DefaultWithValue: Story = {
 
 export const DefaultReadonly: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Redonly',
   args: {
     ...ARGS,
     readonly: true,
   },
 };
 
-export const DefaultDisabled: Story = {
+export const DisabledNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Disabled - no value',
+  args: {
+    ...ARGS,
+    value: '',
+    disabled: true,
+  },
+};
+
+export const DisabledWithValue: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Disabled - populated',
   args: {
     ...ARGS,
     disabled: true,
@@ -90,6 +103,7 @@ export const DefaultDisabled: Story = {
 
 export const ErrorNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Error - no value',
   args: {
     ...ARGS,
     value: '',
@@ -99,6 +113,7 @@ export const ErrorNoValue: Story = {
 
 export const ErrorWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Disabled - populated',
   args: {
     ...ARGS,
     error: true,
