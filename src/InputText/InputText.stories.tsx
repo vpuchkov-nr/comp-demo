@@ -18,6 +18,23 @@ const meta: Meta<typeof InputText> = {
       url: 'https://www.figma.com/file/hPB6N3qbruHU86qWlETWHA/Central-Design-System?type=design&node-id=20-845',
     },
   },
+  argTypes: {
+    size: { control: 'radio', options: ['small', '', 'large'] },
+  },
+  args: {
+    tooltip: '',
+    label: '',
+    size: '',
+    value: 'Text Input',
+    placeholder: 'Placeholder',
+    state: '',
+    type: 'text',
+    helpText: '',
+    error: false,
+    errorMessage: '',
+    readonly: false,
+    disabled: false,
+  },
 };
 export default meta;
 
@@ -60,7 +77,7 @@ export const DefaultNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - no value',
   args: {
-    ...ARGS,
+    // ...ARGS,
     value: '',
   },
 };
@@ -68,16 +85,16 @@ export const DefaultNoValue: Story = {
 export const DefaultWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - populated',
-  args: {
-    ...ARGS,
-  },
+  // args: {
+  //   ...ARGS,
+  // },
 };
 
 export const DefaultReadonly: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Redonly',
   args: {
-    ...ARGS,
+    // ...ARGS,
     readonly: true,
   },
 };
@@ -86,7 +103,7 @@ export const DisabledNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Disabled - no value',
   args: {
-    ...ARGS,
+    // ...ARGS,
     value: '',
     disabled: true,
   },
@@ -96,7 +113,7 @@ export const DisabledWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Disabled - populated',
   args: {
-    ...ARGS,
+    // ...ARGS,
     disabled: true,
   },
 };
@@ -105,7 +122,7 @@ export const ErrorNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Error - no value',
   args: {
-    ...ARGS,
+    // ...ARGS,
     value: '',
     error: true,
   },
@@ -113,9 +130,9 @@ export const ErrorNoValue: Story = {
 
 export const ErrorWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
-  name: 'Disabled - populated',
+  name: 'Error - populated',
   args: {
-    ...ARGS,
+    // ...ARGS,
     error: true,
   },
 };
