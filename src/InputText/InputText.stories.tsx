@@ -41,43 +41,17 @@ export default meta;
 type Story = StoryObj<typeof InputText>;
 
 const InputTextWithHooks = (props) => {
-  // Sets the hooks for both the label and primary props
   const [value, setValue] = useState(props.value);
-
-  // Sets a click handler to change the label's value
   const handleOnChange = (event) => {
     setValue(event.target.value);
   };
-  return (
-    <Component
-      {...props}
-      onInput={handleOnChange}
-      onChange={handleOnChange}
-      value={value}
-    />
-  );
-};
-
-const ARGS = {
-  tooltip: '',
-  label: '',
-  size: '',
-  value: 'Text Input',
-  placeholder: 'Placeholder',
-  state: '',
-  type: 'text',
-  helpText: '',
-  error: false,
-  errorMessage: '',
-  readonly: false,
-  disabled: false,
+  return <Component {...props} onInput={handleOnChange} value={value} />;
 };
 
 export const DefaultNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - no value',
   args: {
-    // ...ARGS,
     value: '',
   },
 };
@@ -85,25 +59,12 @@ export const DefaultNoValue: Story = {
 export const DefaultWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - populated',
-  // args: {
-  //   ...ARGS,
-  // },
-};
-
-export const DefaultReadonly: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
-  name: 'Redonly',
-  args: {
-    // ...ARGS,
-    readonly: true,
-  },
 };
 
 export const DisabledNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Disabled - no value',
   args: {
-    // ...ARGS,
     value: '',
     disabled: true,
   },
@@ -113,7 +74,6 @@ export const DisabledWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Disabled - populated',
   args: {
-    // ...ARGS,
     disabled: true,
   },
 };
@@ -122,7 +82,6 @@ export const ErrorNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Error - no value',
   args: {
-    // ...ARGS,
     value: '',
     error: true,
   },
@@ -132,7 +91,14 @@ export const ErrorWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Error - populated',
   args: {
-    // ...ARGS,
     error: true,
+  },
+};
+
+export const DefaultReadonly: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Redonly',
+  args: {
+    readonly: true,
   },
 };

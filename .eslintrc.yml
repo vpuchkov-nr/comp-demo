@@ -51,3 +51,7 @@ rules:
     - warn
   react/prop-types:
     - warn
+  import/no-unresolved:
+    - error
+    - ignore:
+        - '\.svg'

@@ -23,8 +23,6 @@ export default {
       8: '32px',
       10: '40px',
       12: '48px',
-      // 'border-width-1': '1px',
-      // 'border-width-2': '2px',
     },
 
     colors: {
@@ -81,8 +79,8 @@ export default {
       boxShadow: {
         small: '0 4px 8px 0 rgba(0,0,0,0.08)',
         medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
-        'input-default': '0 0 0 2px #A8DFFF',
-        'input-error': '0 0 0 2px #FFD5CF',
+        'input-default': '0 0 0 2px color-blue-200',
+        'input-error': '0 0 0 2px color-red-200',
       },
       borderRadius: {
         1: '3px',
@@ -96,7 +94,6 @@ export default {
       fontSize: {
         xs: ['12px', '18px'],
         sm: ['14px', '21px'],
-        // base: ['16px', '24px'],
       },
       colors: {
         grayscale: {

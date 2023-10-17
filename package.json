@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-designs": "^7.0.5",
     "@storybook/addon-essentials": "^7.0.6",
     "@storybook/addon-interactions": "^7.0.6",
     "@storybook/addon-links": "^7.0.6",
@@ -73,6 +74,7 @@
     "typescript": "^5.2.2",
     "vite": "^4.2.0",
     "vite-plugin-dts": "^3.6.0",
+    "vite-plugin-svgr": "^4.1.0",
     "vitest": "^0.34.6"
   },
   "publishConfig": {
