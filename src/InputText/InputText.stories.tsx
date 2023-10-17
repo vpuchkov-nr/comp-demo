@@ -23,13 +23,13 @@ const meta: Meta<typeof InputText> = {
   },
   args: {
     tooltip: '',
-    label: '',
+    label: 'Label',
     size: '',
     value: 'Text Input',
     placeholder: 'Placeholder',
     state: '',
     type: 'text',
-    helpText: '',
+    helpText: 'This is a helper text example',
     error: false,
     errorMessage: '',
     readonly: false,
@@ -84,6 +84,7 @@ export const ErrorNoValue: Story = {
   args: {
     value: '',
     error: true,
+    errorMessage: 'Error inline message',
   },
 };
 
@@ -92,6 +93,7 @@ export const ErrorWithValue: Story = {
   name: 'Error - populated',
   args: {
     error: true,
+    errorMessage: 'Error inline message',
   },
 };
 

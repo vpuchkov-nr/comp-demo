@@ -1,26 +1,26 @@
 import { InputText as PrimeInputText } from 'primereact/inputtext';
-import cn from 'classnames';
+// import cn from 'classnames';
+import Label from '../Label/Label';
+import Small from '../Small/Small';
 import { ErrorIcon } from '../assets/icons';
 
 export default function InputText(props) {
   console.log('and props are: ', props);
-  const labelClassName = cn({});
+  // const labelClassName = cn({});
   return (
-    <div className="flex flex-col">
-      {props.label && <label htmlFor={props.id}>{props.label}</label>}
+    <div className="flex flex-col gap-1">
+      {props.label && <Label id={props.id}>{props.label}</Label>}
 
       <PrimeInputText {...props} />
 
       {props.error && props.errorMessage && (
-        <small className="error-text">
+        <Small className="text-red-600 flex flex-align-center">
           <ErrorIcon />
           {props.errorMessage}
-        </small>
+        </Small>
       )}
 
-      {props.helpText && (
-        <small className="helper-text">{props.helpText}</small>
-      )}
+      {props.helpText && <Small>{props.helpText}</Small>}
     </div>
   );
 }
