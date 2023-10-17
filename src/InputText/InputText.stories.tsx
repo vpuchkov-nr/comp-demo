@@ -41,13 +41,26 @@ const InputTextWithHooks = (props) => {
   );
 };
 
+const ARGS = {
+  tooltip: '',
+  label: '',
+  size: '',
+  value: 'Text Input',
+  placeholder: 'Placeholder',
+  state: '',
+  type: 'text',
+  helpText: '',
+  error: false,
+  errorMessage: '',
+  readonly: false,
+  disabled: false,
+};
+
 export const DefaultNoValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - no value',
   args: {
-    tooltip: 'test',
-    label: 'test',
-    size: '',
+    ...ARGS,
     value: '',
   },
 };
@@ -55,32 +68,39 @@ export const DefaultNoValue: Story = {
 export const DefaultWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   args: {
-    tooltip: 'test',
-    label: '',
-    size: '',
-    value: 'Text Input',
-    placeholder: 'Placeholder',
-    state: '',
-    type: 'text',
-    helpText: '',
-    error: false,
-    errorMessage: '',
+    ...ARGS,
   },
 };
 
 export const DefaultReadonly: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   args: {
-    tooltip: 'test',
-    label: '',
-    size: '',
-    value: 'Text Input',
-    placeholder: 'Placeholder',
-    state: '',
-    type: 'text',
-    helpText: '',
-    error: false,
-    errorMessage: '',
+    ...ARGS,
     readonly: true,
+  },
+};
+
+export const DefaultDisabled: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  args: {
+    ...ARGS,
+    disabled: true,
+  },
+};
+
+export const ErrorNoValue: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  args: {
+    ...ARGS,
+    value: '',
+    error: true,
+  },
+};
+
+export const ErrorWithValue: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  args: {
+    ...ARGS,
+    error: true,
   },
 };

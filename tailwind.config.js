@@ -82,6 +82,7 @@ export default {
         small: '0 4px 8px 0 rgba(0,0,0,0.08)',
         medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
         'input-default': '0 0 0 2px #A8DFFF',
+        'input-error': '0 0 0 2px #FFD5CF',
       },
       borderRadius: {
         1: '3px',
