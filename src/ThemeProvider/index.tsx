@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { PrimeReactProvider } from 'primereact/api';
 import { usePassThrough } from 'primereact/passthrough';
 import Tailwind from 'primereact/passthrough/tailwind';
-import InputTextTheme from '../InputText/theme.ts';
+import InputTextTheme from '../components/InputText/theme.ts';
 
 type MyComponentProps = {
   children: ReactNode;

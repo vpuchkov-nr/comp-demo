@@ -2,7 +2,7 @@ import { InputText as PrimeInputText } from 'primereact/inputtext';
 import cn from 'classnames';
 import Label from '../Label/Label';
 import Small from '../Small/Small';
-import { ErrorIcon } from '../assets/icons';
+import { ErrorIcon } from '../../icons';
 
 export default function InputText(props) {
   const { Icon } = props;

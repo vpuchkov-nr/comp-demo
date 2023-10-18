@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
 import InputText from './InputText.tsx';
-import { ThemeProvider } from '../';
+import { ThemeProvider } from '../../';
 
 const Component = (props) => (
   <ThemeProvider>
@@ -18,7 +18,6 @@ const Icon = (props) => {
 
 const meta: Meta<typeof InputText> = {
   component: Component,
-  title: 'InputText',
   parameters: {
     design: {
       type: 'figma',

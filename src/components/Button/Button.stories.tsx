@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import Button from './Button.tsx';
-import { ThemeProvider } from '../';
+import { ThemeProvider } from '../../';
 
 const Component = (args) => (
   <ThemeProvider>
