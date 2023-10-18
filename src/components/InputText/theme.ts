@@ -6,7 +6,7 @@ const InputTextTheme = {
       'm-0 py-0 gap-2',
       'text-grayscale-1400 placeholder-grayscale-900 bg-white',
       'transition-colors duration-200 appearance-none',
-      'border border-grayscale-500 rounded-1',
+      'border border-grayscale-500 !rounded-1',
       'hover:border-blue-600',
       'focus:border-blue-600 focus:outline-none focus:outline-offset-0 focus:shadow-input-default',
       'read-only:bg-grayscale-300',
