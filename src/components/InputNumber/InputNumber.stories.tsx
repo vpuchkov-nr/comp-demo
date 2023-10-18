@@ -1,22 +1,15 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import cn from 'classnames';
-import InputText from './InputText.tsx';
+import InputNumber from './InputNumber.tsx';
 import { ThemeProvider } from '../../';
 
 const Component = (props) => (
   <ThemeProvider>
-    <InputText {...props} />
+    <InputNumber {...props} />
   </ThemeProvider>
 );
 
-const SeachIcon = (props) => {
-  const { className } = props;
-  const iconClassName = cn('pi pi-search', className);
-  return <i className={iconClassName} />;
-};
-
-const meta: Meta<typeof InputText> = {
+const meta: Meta<typeof InputNumber> = {
   component: Component,
   parameters: {
     design: {
@@ -26,12 +19,11 @@ const meta: Meta<typeof InputText> = {
   },
   argTypes: {
     size: { control: 'radio', options: ['small', '', 'large'] },
-    iconPosition: { control: 'radio', options: ['left', 'right'] },
   },
   args: {
     label: 'Label',
     size: '',
-    value: 'Text Input',
+    value: '1234567890',
     placeholder: 'Placeholder',
     type: 'text',
     helpText: 'This is a helper text example',
@@ -39,24 +31,29 @@ const meta: Meta<typeof InputText> = {
     errorMessage: '',
     readOnly: false,
     disabled: false,
-    Icon: SeachIcon,
-    iconPosition: 'left',
+    mode: 'decimal',
+    useGrouping: false,
+    currency: undefined,
+    minFractionDigits: 0,
+    maxFractionDigits: 0,
+    suffix: '',
+    prefix: '',
   },
 };
 export default meta;
 
-type Story = StoryObj<typeof InputText>;
+type Story = StoryObj<typeof InputNumber>;
 
-const InputTextWithHooks = (props) => {
+const InputNumberWithHooks = (props) => {
   const [value, setValue] = useState(props.value);
   const handleOnChange = (event) => {
     setValue(event.target.value);
   };
-  return <Component {...props} onInput={handleOnChange} value={value} />;
+  return <Component {...props} onValueChange={handleOnChange} value={value} />;
 };
 
 export const DefaultNoValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Default - no value',
   args: {
     value: '',
@@ -64,21 +61,20 @@ export const DefaultNoValue: Story = {
 };
 
 export const DefaultWithValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Default - populated',
 };
 
 export const DefaultNoValueNoIcon: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Default - no value, no icon',
   args: {
     value: '',
-    Icon: null,
   },
 };
 
 export const DisabledNoValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Disabled - no value',
   args: {
     value: '',
@@ -87,7 +83,7 @@ export const DisabledNoValue: Story = {
 };
 
 export const DisabledWithValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Disabled - populated',
   args: {
     disabled: true,
@@ -95,7 +91,7 @@ export const DisabledWithValue: Story = {
 };
 
 export const ErrorNoValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Error - no value',
   args: {
     value: '',
@@ -105,7 +101,7 @@ export const ErrorNoValue: Story = {
 };
 
 export const ErrorWithValue: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Error - populated',
   args: {
     error: true,
@@ -114,18 +110,17 @@ export const ErrorWithValue: Story = {
 };
 
 export const ErrorNoValueNoIcon: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Error - no value, no icon',
   args: {
     value: '',
     error: true,
     errorMessage: 'Error inline message',
-    Icon: null,
   },
 };
 
 export const DefaultReadonly: Story = {
-  render: (props) => <InputTextWithHooks {...props} />,
+  render: (props) => <InputNumberWithHooks {...props} />,
   name: 'Redonly',
   args: {
     readOnly: true,
