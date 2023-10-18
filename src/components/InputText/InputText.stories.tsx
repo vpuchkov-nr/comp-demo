@@ -10,7 +10,7 @@ const Component = (props) => (
   </ThemeProvider>
 );
 
-const Icon = (props) => {
+const SeachIcon = (props) => {
   const { className } = props;
   const iconClassName = cn('pi pi-search', className);
   return <i className={iconClassName} />;
@@ -39,7 +39,7 @@ const meta: Meta<typeof InputText> = {
     errorMessage: '',
     readonly: false,
     disabled: false,
-    Icon: Icon,
+    Icon: SeachIcon,
     iconPosition: 'left',
   },
 };
@@ -66,6 +66,15 @@ export const DefaultNoValue: Story = {
 export const DefaultWithValue: Story = {
   render: (props) => <InputTextWithHooks {...props} />,
   name: 'Default - populated',
+};
+
+export const DefaultNoValueNoIcon: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Default - no value, no icon',
+  args: {
+    value: '',
+    Icon: null,
+  },
 };
 
 export const DisabledNoValue: Story = {
@@ -101,6 +110,17 @@ export const ErrorWithValue: Story = {
   args: {
     error: true,
     errorMessage: 'Error inline message',
+  },
+};
+
+export const ErrorNoValueNoIcon: Story = {
+  render: (props) => <InputTextWithHooks {...props} />,
+  name: 'Error - no value, no icon',
+  args: {
+    value: '',
+    error: true,
+    errorMessage: 'Error inline message',
+    Icon: null,
   },
 };
 
