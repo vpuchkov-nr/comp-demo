@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
+import cn from 'classnames';
 import InputText from './InputText.tsx';
 import { ThemeProvider } from '../';
 
@@ -8,6 +9,12 @@ const Component = (props) => (
     <InputText {...props} />
   </ThemeProvider>
 );
+
+const Icon = (props) => {
+  const { className } = props;
+  const iconClassName = cn('pi pi-search', className);
+  return <i className={iconClassName} />;
+};
 
 const meta: Meta<typeof InputText> = {
   component: Component,
@@ -20,20 +27,21 @@ const meta: Meta<typeof InputText> = {
   },
   argTypes: {
     size: { control: 'radio', options: ['small', '', 'large'] },
+    iconPosition: { control: 'radio', options: ['left', 'right'] },
   },
   args: {
-    tooltip: '',
     label: 'Label',
     size: '',
     value: 'Text Input',
     placeholder: 'Placeholder',
-    state: '',
     type: 'text',
     helpText: 'This is a helper text example',
     error: false,
     errorMessage: '',
     readonly: false,
     disabled: false,
+    Icon: Icon,
+    iconPosition: 'left',
   },
 };
 export default meta;

@@ -22,13 +22,6 @@ const ThemeProvider = ({ children }: MyComponentProps) => {
         }),
       },
       inputtext: InputTextTheme,
-      label: {
-        root: ({ props }) => ({
-          className: {
-            'text-red-500': props.error,
-          },
-        }),
-      },
     },
     {
       mergeSections: true,
