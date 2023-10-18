@@ -8,7 +8,7 @@ const InputTextTheme = {
       'transition-colors duration-200 appearance-none',
       'border border-grayscale-500 !rounded-1',
       'hover:border-blue-600',
-      'focus:border-blue-600 focus:outline-none focus:outline-offset-0 focus:shadow-input-default',
+      'focus:border-blue-600 focus:shadow-input-default',
       'read-only:bg-grayscale-300',
       'readonly:bg-grayscale-300',
       'disabled:bg-grayscale-300 disabled:cursor-not-allowed disabled:opacity-60',

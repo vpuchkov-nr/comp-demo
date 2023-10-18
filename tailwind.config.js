@@ -81,8 +81,8 @@ export default {
       boxShadow: {
         small: '0 4px 8px 0 rgba(0,0,0,0.08)',
         medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
-        'input-default': '0 0 0 2px color-blue-200',
-        'input-error': '0 0 0 2px color-red-200',
+        'input-default': '0 0 0 2px #a8dfff',
+        'input-error': '0 0 0 2px #ffd5cf',
       },
       borderRadius: {
         1: '3px',

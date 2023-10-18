@@ -24,6 +24,7 @@ const ThemeProvider = ({ children }: MyComponentProps) => {
       },
       inputtext: InputTextTheme,
       inputnumber: InputNumberTheme,
+      inputmask: InputTextTheme,
     },
     {
       mergeSections: true,
