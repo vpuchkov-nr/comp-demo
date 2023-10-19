@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import cn from 'classnames';
-import InputText from './InputText.tsx';
 import { ThemeProvider } from '../../';
+import InputText from './InputText.tsx';
 
 const Component = (props) => (
   <ThemeProvider>

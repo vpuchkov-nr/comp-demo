@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import InputNumber from './InputNumber.tsx';
 import { ThemeProvider } from '../../';
+import InputNumber from './InputNumber.tsx';
 
 const Component = (props) => (
   <ThemeProvider>
@@ -25,7 +25,7 @@ const meta: Meta<typeof InputNumber> = {
     size: '',
     value: '1234567890',
     placeholder: 'Placeholder',
-    type: 'text',
+    type: 'number',
     helpText: 'This is a helper text example',
     error: false,
     errorMessage: '',

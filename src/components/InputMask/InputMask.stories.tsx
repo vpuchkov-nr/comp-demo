@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import InputMask from './InputMask.tsx';
 import { ThemeProvider } from '../../';
+import InputMask from './InputMask.tsx';
 
 const Component = (props) => (
   <ThemeProvider>
@@ -32,13 +32,6 @@ const meta: Meta<typeof InputMask> = {
     errorMessage: '',
     readOnly: false,
     disabled: false,
-    mode: 'decimal',
-    useGrouping: false,
-    currency: undefined,
-    minFractionDigits: 0,
-    maxFractionDigits: 0,
-    suffix: '',
-    prefix: '',
   },
 };
 export default meta;
