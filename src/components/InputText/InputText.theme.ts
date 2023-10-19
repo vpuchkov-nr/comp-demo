@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
 const InputTextTheme = {
-  root: ({ props, context }) => ({
+  root: ({ props }) => ({
     className: cn(
       'm-0 py-0 gap-2',
       'text-grayscale-1400 placeholder-grayscale-900 bg-white',
@@ -10,7 +10,6 @@ const InputTextTheme = {
       'hover:border-blue-600',
       'focus:border-blue-600 focus:shadow-input-default',
       'read-only:bg-grayscale-300',
-      'readonly:bg-grayscale-300',
       'disabled:bg-grayscale-300 disabled:cursor-not-allowed disabled:opacity-60',
       {
         'text-sm px-3 h-10': !props.size,

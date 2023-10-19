@@ -40,7 +40,6 @@ type Story = StoryObj<typeof InputMask>;
 const InputMaskWithHooks = (props) => {
   const [value, setValue] = useState(props.value);
   const handleOnChange = (event) => {
-    console.log(event.target.value, event);
     setValue(event.target.value);
   };
   return <Component {...props} onChange={handleOnChange} value={value} />;

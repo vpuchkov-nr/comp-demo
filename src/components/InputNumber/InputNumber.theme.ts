@@ -2,7 +2,7 @@ import cn from 'classnames';
 
 const InputNumberTheme = {
   input: {
-    root: ({ props, context, parent }) => {
+    root: ({ props, parent }) => {
       return {
         className: cn(
           'm-0 py-0 gap-2',
@@ -12,7 +12,6 @@ const InputNumberTheme = {
           'hover:border-blue-600',
           'focus:border-blue-600 focus:outline-none focus:outline-offset-0 focus:shadow-input-default',
           'read-only:bg-grayscale-300',
-          'readonly:bg-grayscale-300',
           'disabled:bg-grayscale-300 disabled:cursor-not-allowed disabled:opacity-60',
           {
             'text-sm px-3 h-10': !props.size,
