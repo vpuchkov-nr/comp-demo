@@ -4,7 +4,7 @@ import { usePassThrough } from 'primereact/passthrough';
 import Tailwind from 'primereact/passthrough/tailwind';
 import InputTextTheme from '../components/InputText/InputText.theme.ts';
 import InputNumberTheme from '../components/InputNumber/InputNumber.theme.ts';
-import ButtonTheme from '../Button/theme.ts';
+import ButtonTheme from '../components/Button/theme.ts';
 
 type MyComponentProps = {
   children: ReactNode;
