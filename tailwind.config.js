@@ -28,6 +28,7 @@ export default {
     },
 
     colors: {
+      transparent: 'transparent',
       blue: {
         100: '#e6f7ff',
         200: '#a8dfff',
@@ -77,13 +78,18 @@ export default {
         1000: '#663c00',
       },
     },
+    boxShadow: {
+      small: '0 4px 8px 0 rgba(0,0,0,0.08)',
+      medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
+      'input-default': '0 0 0 2px color-blue-200',
+      'input-error': '0 0 0 2px color-red-200',
+      brand: '0 0 0 2px #ffffff, 0 0 0 4px #00439c, 0 1px 2px 0 black',
+      contrast: '0 0 0 2px #ffffff, 0 0 0 4px #A8DFFF, 0 1px 2px 0 black',
+      destructive: '0 0 0 2px #ffffff, 0 0 0 4px #B5161B, 0 1px 2px 0 black',
+      success: '0 0 0 2px #ffffff, 0 0 0 4px #006529, 0 1px 2px 0 black',
+      warning: '0 0 0 2px #ffffff, 0 0 0 4px #895400, 0 1px 2px 0 black',
+    },
     extend: {
-      boxShadow: {
-        small: '0 4px 8px 0 rgba(0,0,0,0.08)',
-        medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
-        'input-default': '0 0 0 2px #a8dfff',
-        'input-error': '0 0 0 2px #ffd5cf',
-      },
       borderRadius: {
         1: '3px',
         2: '6px',

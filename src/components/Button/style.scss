@@ -1,0 +1,9 @@
+.invisible-label {
+  span:first-of-type {
+    margin: 0;
+  }
+
+  span:nth-child(n + 2) {
+    display: none;
+  }
+}
