@@ -25,8 +25,7 @@ const meta: Meta<typeof InputMask> = {
     size: '',
     value: '999-999-9998',
     mask: '999-999-9999',
-    placeholder: '999-999-9999',
-    type: 'text',
+    placeholder: '123-456-1890',
     helpText: 'This is a helper text example',
     error: false,
     errorMessage: '',
@@ -41,6 +40,7 @@ type Story = StoryObj<typeof InputMask>;
 const InputMaskWithHooks = (props) => {
   const [value, setValue] = useState(props.value);
   const handleOnChange = (event) => {
+    console.log(event.target.value, event);
     setValue(event.target.value);
   };
   return <Component {...props} onChange={handleOnChange} value={value} />;
@@ -48,7 +48,7 @@ const InputMaskWithHooks = (props) => {
 
 export const DefaultNoValue: Story = {
   render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Default - no value',
+  name: 'No value',
   args: {
     value: '',
   },
@@ -56,67 +56,24 @@ export const DefaultNoValue: Story = {
 
 export const DefaultWithValue: Story = {
   render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Default - populated',
+  name: 'Populated',
 };
 
-export const DefaultNoValueNoIcon: Story = {
+export const DefaultCombinedMask: Story = {
   render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Default - no value, no icon',
+  name: 'Combined mask',
   args: {
-    value: '',
+    mask: '(999) aa*-9999? x99999',
+    placeholder: '(999) AAX-9999? x99999',
   },
 };
 
-export const DisabledNoValue: Story = {
+export const DefaultSlotChar: Story = {
   render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Disabled - no value',
+  name: 'Slot char',
   args: {
-    value: '',
-    disabled: true,
-  },
-};
-
-export const DisabledWithValue: Story = {
-  render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Disabled - populated',
-  args: {
-    disabled: true,
-  },
-};
-
-export const ErrorNoValue: Story = {
-  render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Error - no value',
-  args: {
-    value: '',
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const ErrorWithValue: Story = {
-  render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Error - populated',
-  args: {
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const ErrorNoValueNoIcon: Story = {
-  render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Error - no value, no icon',
-  args: {
-    value: '',
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const DefaultReadonly: Story = {
-  render: (props) => <InputMaskWithHooks {...props} />,
-  name: 'Redonly',
-  args: {
-    readOnly: true,
+    mask: '99/99/9999',
+    placeholder: '99/99/9999',
+    slotChar: 'mm/dd/yyyy',
   },
 };

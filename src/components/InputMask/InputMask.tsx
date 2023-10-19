@@ -4,8 +4,6 @@ import Small from '../Small/Small';
 import { ErrorIcon } from '../../icons';
 
 export default function InputText(props) {
-  console.log('and props are', props);
-
   return (
     <div className="flex flex-col gap-1 items-start">
       {props.label && <Label id={props.id}>{props.label}</Label>}
