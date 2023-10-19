@@ -1,4 +1,7 @@
-import { InputNumber as PrimeInputNumber } from 'primereact/inputnumber';
+import {
+  InputNumber as PrimeInputNumber,
+  InputNumberProps,
+} from 'primereact/inputnumber';
 import Label from '../Label/Label';
 import Small from '../Small/Small';
 import { ErrorIcon } from '../../icons';

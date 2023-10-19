@@ -19,13 +19,13 @@ const meta: Meta<typeof InputNumber> = {
   },
   argTypes: {
     size: { control: 'radio', options: ['small', '', 'large'] },
+    mode: { control: 'radio', options: ['decimal', 'currency', undefined] },
   },
   args: {
     label: 'Label',
     size: '',
     value: '1234567890',
-    placeholder: 'Placeholder',
-    type: 'number',
+    placeholder: '0987654321',
     helpText: 'This is a helper text example',
     error: false,
     errorMessage: '',
@@ -54,7 +54,7 @@ const InputNumberWithHooks = (props) => {
 
 export const DefaultNoValue: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Default - no value',
+  name: 'No value',
   args: {
     value: '',
   },
@@ -62,67 +62,38 @@ export const DefaultNoValue: Story = {
 
 export const DefaultWithValue: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Default - populated',
+  name: 'Populated',
 };
 
-export const DefaultNoValueNoIcon: Story = {
+export const DefaultWithPrefix: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Default - no value, no icon',
+  name: 'With prefix',
   args: {
-    value: '',
+    prefix: '% ',
   },
 };
 
-export const DisabledNoValue: Story = {
+export const DefaultWithSuffix: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Disabled - no value',
+  name: 'With suffix',
   args: {
-    value: '',
-    disabled: true,
+    suffix: ' %',
   },
 };
 
-export const DisabledWithValue: Story = {
+export const DefaultWithGrouping: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Disabled - populated',
+  name: 'With grouping',
   args: {
-    disabled: true,
+    useGrouping: true,
   },
 };
 
-export const ErrorNoValue: Story = {
+export const DefaultWithCurrency: Story = {
   render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Error - no value',
+  name: 'With currency',
   args: {
-    value: '',
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const ErrorWithValue: Story = {
-  render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Error - populated',
-  args: {
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const ErrorNoValueNoIcon: Story = {
-  render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Error - no value, no icon',
-  args: {
-    value: '',
-    error: true,
-    errorMessage: 'Error inline message',
-  },
-};
-
-export const DefaultReadonly: Story = {
-  render: (props) => <InputNumberWithHooks {...props} />,
-  name: 'Redonly',
-  args: {
-    readOnly: true,
+    currency: 'USD',
+    mode: 'currency',
   },
 };
