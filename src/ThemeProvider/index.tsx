@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 import { PrimeReactProvider } from 'primereact/api';
 import { usePassThrough } from 'primereact/passthrough';
 import Tailwind from 'primereact/passthrough/tailwind';
+import InputTextTheme from '../components/InputText/InputText.theme.ts';
+import InputNumberTheme from '../components/InputNumber/InputNumber.theme.ts';
 
 type MyComponentProps = {
   children: ReactNode;
@@ -20,6 +22,9 @@ const ThemeProvider = ({ children }: MyComponentProps) => {
           },
         }),
       },
+      inputtext: InputTextTheme,
+      inputnumber: InputNumberTheme,
+      inputmask: InputTextTheme,
     },
     {
       mergeSections: true,

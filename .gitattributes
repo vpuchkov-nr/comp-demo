@@ -8,6 +8,7 @@
 *.md text eol=lf
 *.mdx text eol=lf
 *.json text eol=lf
+*.svg text eol=lf
 .husky/* text eol=lf
 .gitignore text eol=lf
 .lintstagedrc text eol=lf

@@ -14,8 +14,10 @@ export default {
   ],
   theme: {
     spacing: {
+      0: '0px',
       1: '4px',
       2: '8px',
+      2.5: '10px',
       3: '12px',
       4: '16px',
       5: '20px',
@@ -23,15 +25,8 @@ export default {
       8: '32px',
       10: '40px',
       12: '48px',
-      'border-width-1': '1px',
-      'border-width-2': '2px',
     },
-    borderRadius: {
-      1: '3px',
-      2: '6px',
-      3: '12px',
-      full: '100px',
-    },
+
     colors: {
       blue: {
         100: '#e6f7ff',
@@ -86,6 +81,21 @@ export default {
       boxShadow: {
         small: '0 4px 8px 0 rgba(0,0,0,0.08)',
         medium: '0 4px 16px 0 rgba(0,0,0,0.15)',
+        'input-default': '0 0 0 2px #a8dfff',
+        'input-error': '0 0 0 2px #ffd5cf',
+      },
+      borderRadius: {
+        1: '3px',
+        2: '6px',
+        3: '12px',
+        full: '100px',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        xs: ['12px', '18px'],
+        sm: ['14px', '21px'],
       },
       colors: {
         grayscale: {
